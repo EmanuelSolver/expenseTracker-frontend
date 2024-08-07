@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ExpenseTracker Dashboard</h2>
+        <button id="fetchExpensesBtn">Display Expenses</button>
+        <button id="showAddExpenseFormBtn">Add Expense</button>
+        
+        <!-- Add Expense Form (initially hidden) -->
+        <div id="addExpenseForm" style="display: none;">
+            <h3>Add New Expense</h3>
+            <form id="addExpense">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" required>
+                
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Submit</button>
+                <button type="button" id="cancelAddExpenseBtn">Cancel</button>
+            </form>
+        </div>
+
+        <div id="expensesContainer"></div>
+        
+        <script src="jsfiles/dashboardScript.js"></script>
+    </div>
+</body>
+</html>
