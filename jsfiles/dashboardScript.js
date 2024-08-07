@@ -126,6 +126,7 @@ function displayExpenses(expenses) {
         <thead>
             <tr>
                 <th>ID</th>
+                <th>Expense</th>
                 <th>Description</th>
                 <th>Amount</th>
                 <th>Date</th>
@@ -136,6 +137,7 @@ function displayExpenses(expenses) {
             ${expenses.map(expense => `
                 <tr>
                     <td>${expense.id}</td>
+                    <td>${expense.name}</td>
                     <td>${expense.description}</td>
                     <td>${expense.amount}</td>
                     <td>${expense.date}</td>
