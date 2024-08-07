@@ -1,1 +1,1 @@
-export const  apiDomain = 'http://localhost:8081';
+export const  apiDomain = 'https://plpexpensetracker-etdqc6ccgpanakcw.southafricanorth-01.azurewebsites.net/';
